@@ -8,7 +8,7 @@ class LineChartViewController extends GetxController {
 
   final RxList<BloodSugarLevelData> bloodSugarLevelData = RxList();
 
-  final Rx<RangeValues> targetBloodSugarLevel = const RangeValues(20, 80).obs;
+  final Rx<RangeValues> targetBloodSugarLevel = const RangeValues(100, 120).obs;
 
   RangeLabels get targetBloodSugarLevelLabel => RangeLabels(
         targetBloodSugarLevel.value.start.round().toString(),
